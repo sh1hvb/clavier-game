@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Word Game</title>
+</head>
+<body>
+
+<article id="modale">
+    <div id="darkModale"></div>
+        <section id="displayModale">
+            <article>
+                <p>Perdu</p>
+            </article>
+            <article id="restart">
+                <p><span id="scoreFinal"></span> POINTS</p>
+                <button id="btnRestart">Recommencer</button>
+            </article>
+    </section>
+
+</article>
+    <header>
+        <!-- Titre -->
+        <h1>Word Games</h1>
+    </header>
+    <main>
+        <!-- canvas à gauche-->
+        <article id="displayGame">
+            <p id="textDepart">je</p>
+            <input type="text" id="champs">
+            <img id="terre" src="images/terre.png" alt="">
+            <img id="canon" src="images/canon.png" alt="">
+        </article>
+        <article id="displayScore">
+            <!-- tableau de bord à droite -->
+            <section>
+            <!-- Pseudo -->
+            </section>
+            <section>
+            <!-- Temps de jeu -->
+            </section>
+            <section>
+                <!-- Nombre de bateau coulé -->
+                <p class="scoreText">tu as coulé <br><span id="bateauCoule">0</span><br> bateau</p>
+                <!-- Image de bateau = Nbr -->
+                <p class="scoreText"><span id="vie"></span> vie</p>
+            </section>
+</article>
+            
+        </main>
+<script src="app.js"></script>
+</body>
+</html>
